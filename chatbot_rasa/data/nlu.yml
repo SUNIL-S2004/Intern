@@ -1,0 +1,159 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+- intent: provide_application_id
+  examples: |
+    - [2025-4-1-121-1-1-01](application_id)
+    - my application id is [2025-4-1-121-1-1-01](application_id)
+    - it's [2025-4-1-121-1-1-01](application_id)
+    
+- intent: select_land_type
+  examples: |
+    - I choose [Involving Subdivision](land_type)
+    - Select [Not Involving Subdivision](land_type)
+    - [Measurement of field boundary](land_type)
+    - [F-LINE Appeal](land_type)
+    - It is [Not Involving Subdivision](land_type)
+
+  
+- intent: check_status
+  examples: |
+    - what is the status of my application
+    - check status
+    - I want to know my application status
+    - status of application id [5](application_id)
+    - application id is [3](application_id)
+    - check status of id [10](application_id)
+- intent: apply_for_land
+  examples: |
+    - I want to apply for land
+    - Apply for land
+    - Land application
+- intent: select_district
+  examples: |
+    - I want [Madurai](district)
+    - [Chennai](district)
+
+- intent: select_taluk
+  examples: |
+    - [Melur](taluk)
+    - [Thirumangalam](taluk)
+
+- intent: select_village
+  examples: |
+    - [Perambur](village)
+    - [Kuthalam](vilage)
+
+- intent: give_state
+  examples: |
+    - My state is [Tamil Nadu](state)
+    - I live in [Kerala](state)
+- intent: submit_application
+  examples: |
+    - Submit my application
+    - I want to submit it now
+    - Please complete the form
+    - Finish and appl
+
+- intent: select_survey
+  examples: |
+    - [1](survey)
+    - [2](survey)
+    - [3](survey number is)
+    - survey number is [4](survey)
+
+- intent: select_subdivision
+  examples: |
+    - [1](subdivision)
+    - [2](subdivision)
+    - subdivision number is [3](subdivision)
+
+    
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - see u
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?

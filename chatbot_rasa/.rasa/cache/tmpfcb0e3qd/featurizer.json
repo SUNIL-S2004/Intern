@@ -1,0 +1,82 @@
+{
+  "type": "IntentMaxHistoryTrackerFeaturizer",
+  "state_featurizer": {
+    "action_texts": [],
+    "entity_tag_specs": [],
+    "feature_states": {
+      "intent": {
+        "affirm": 0,
+        "apply_for_land": 1,
+        "back": 2,
+        "bot_challenge": 3,
+        "check_status": 4,
+        "deny": 5,
+        "give_state": 6,
+        "goodbye": 7,
+        "greet": 8,
+        "mood_great": 9,
+        "mood_unhappy": 10,
+        "nlu_fallback": 11,
+        "out_of_scope": 12,
+        "restart": 13,
+        "select_district": 14,
+        "select_subdivision": 15,
+        "select_survey": 16,
+        "select_taluk": 17,
+        "select_village": 18,
+        "session_start": 19,
+        "submit_application": 20
+      },
+      "action_name": {
+        "action_listen": 0,
+        "action_restart": 1,
+        "action_session_start": 2,
+        "action_default_fallback": 3,
+        "action_deactivate_loop": 4,
+        "action_revert_fallback_events": 5,
+        "action_default_ask_affirmation": 6,
+        "action_default_ask_rephrase": 7,
+        "action_two_stage_fallback": 8,
+        "action_unlikely_intent": 9,
+        "action_back": 10,
+        "...": 11,
+        "action_extract_slots": 12,
+        "action_check_status": 13,
+        "action_get_districts": 14,
+        "action_get_taluks": 15,
+        "action_get_village": 16,
+        "action_show_summary": 17,
+        "action_submit_application": 18,
+        "utter_ask_application_id": 19,
+        "utter_ask_subdivision": 20,
+        "utter_ask_survey": 21,
+        "utter_did_that_help": 22,
+        "utter_goodbye": 23,
+        "utter_greet": 24,
+        "utter_happy": 25,
+        "utter_iamabot": 26,
+        "utter_status": 27
+      },
+      "entities": {
+        "application_id": 0,
+        "district": 1,
+        "subdivision": 2,
+        "survey": 3,
+        "taluk": 4,
+        "village": 5
+      },
+      "slots": {
+        "application_id_0": 0,
+        "state_0": 1,
+        "district_0": 2,
+        "taluk_0": 3,
+        "village_0": 4,
+        "survey_0": 5,
+        "subdivision_0": 6
+      },
+      "active_loop": {}
+    }
+  },
+  "remove_duplicates": true,
+  "max_history": 5
+}

@@ -1,0 +1,20 @@
+version: "3.1"
+
+stories:
+
+- story: greet and check status
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- story: check status with ID
+  steps:
+    - intent: check_status
+      entities:
+        - application_id: "5"
+    - action: action_check_status
+
+- story: ask for ID if not given
+  steps:
+    - intent: check_status
+    - action: utter_ask_application_id

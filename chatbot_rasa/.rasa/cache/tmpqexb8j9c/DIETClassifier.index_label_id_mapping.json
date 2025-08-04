@@ -1,0 +1,16 @@
+{
+  "0": "affirm",
+  "1": "apply_for_land",
+  "2": "bot_challenge",
+  "3": "check_status",
+  "4": "deny",
+  "5": "give_state",
+  "6": "goodbye",
+  "7": "greet",
+  "8": "mood_great",
+  "9": "mood_unhappy",
+  "10": "select_district",
+  "11": "select_taluk",
+  "12": "select_village",
+  "13": "submit_application"
+}

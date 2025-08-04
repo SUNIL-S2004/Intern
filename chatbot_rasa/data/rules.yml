@@ -1,0 +1,57 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+    - intent: bot_challenge
+    - action: utter_iamabot
+- rule: Provided application ID after prompt
+  steps:
+    - intent: provide_application_id
+    - action: action_check_status
+
+- rule: Start land application
+  steps:
+    - intent: apply_for_land
+    - action: action_get_land_type
+
+- rule: On land type selected
+  steps:
+    - intent: select_land_type
+    - action: action_get_districts
+
+- rule: On district selected
+  steps:
+    - intent: select_district
+    - action: action_get_taluks
+
+- rule: On taluk selected
+  steps:
+    - intent: select_taluk
+    - action: action_get_village
+
+- rule: On village selected
+  steps:
+    - intent: select_village
+    - action: action_get_survey
+
+- rule: On survey selected
+  steps:
+    - intent: select_survey
+    - action: action_get_subdivision
+
+- rule: On subdivision selected
+  steps:
+    - intent: select_subdivision
+    - action: action_show_summary
+
+- rule: Final submission
+  steps:
+    - intent: submit_application
+    - action: action_submit_application

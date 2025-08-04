@@ -1,0 +1,42 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"apply_for_land\"}}]": "action_get_districts",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"apply_for_land\"}}, {\"prev_action\": {\"action_name\": \"action_get_districts\"}, \"user\": {\"intent\": \"apply_for_land\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"select_taluk\"}}]": "action_get_village",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"select_taluk\"}}, {\"prev_action\": {\"action_name\": \"action_get_village\"}, \"user\": {\"intent\": \"select_taluk\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"select_village\"}}]": "action_show_summary",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"select_village\"}}, {\"prev_action\": {\"action_name\": \"action_show_summary\"}, \"user\": {\"intent\": \"select_village\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}]": "utter_iamabot",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}, {\"prev_action\": {\"action_name\": \"utter_iamabot\"}, \"user\": {\"intent\": \"bot_challenge\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"submit_application\"}}]": "action_submit_application",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"submit_application\"}}, {\"prev_action\": {\"action_name\": \"action_submit_application\"}, \"user\": {\"intent\": \"submit_application\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}]": "utter_goodbye",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}, {\"prev_action\": {\"action_name\": \"utter_goodbye\"}, \"user\": {\"intent\": \"goodbye\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"select_district\"}}]": "action_get_taluks",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"select_district\"}}, {\"prev_action\": {\"action_name\": \"action_get_taluks\"}, \"user\": {\"intent\": \"select_district\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "predicting default action with intent session_start",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"select_village\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"select_taluk\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"select_district\"}}]",
+      "predicting default action with intent back",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"select_taluk\"}}, {\"prev_action\": {\"action_name\": \"action_get_village\"}, \"user\": {\"intent\": \"select_taluk\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"goodbye\"}}, {\"prev_action\": {\"action_name\": \"utter_goodbye\"}, \"user\": {\"intent\": \"goodbye\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"select_village\"}}, {\"prev_action\": {\"action_name\": \"action_show_summary\"}, \"user\": {\"intent\": \"select_village\"}}]",
+      "predicting default action with intent restart",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"select_district\"}}, {\"prev_action\": {\"action_name\": \"action_get_taluks\"}, \"user\": {\"intent\": \"select_district\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}, {\"prev_action\": {\"action_name\": \"utter_iamabot\"}, \"user\": {\"intent\": \"bot_challenge\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"apply_for_land\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"apply_for_land\"}}, {\"prev_action\": {\"action_name\": \"action_get_districts\"}, \"user\": {\"intent\": \"apply_for_land\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"submit_application\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"submit_application\"}}, {\"prev_action\": {\"action_name\": \"action_submit_application\"}, \"user\": {\"intent\": \"submit_application\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"bot_challenge\"}}]"
+    ]
+  }
+}

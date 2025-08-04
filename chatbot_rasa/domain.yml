@@ -1,0 +1,122 @@
+version: "3.1"
+
+intents:
+  - greet
+  - check_status
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - apply_for_land
+  - submit_application     
+  - give_state 
+  - select_land_type 
+  - select_district
+  - select_taluk
+  - select_village
+  - select_survey
+  - select_subdivision
+entities:
+  - land_type
+  - application_id
+  - district
+  - taluk
+  - village
+  - survey
+  - subdivision
+
+slots:
+  land_type:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: land_type
+
+  application_id:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: application_id
+  state:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: state
+
+  district:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: district
+
+  taluk:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: taluk
+
+  village:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: village
+  survey:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: survey
+
+  subdivision:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: subdivision
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I assist you today?"
+
+  utter_ask_application_id:
+    - text: "Please provide your application ID to check status."
+
+  # utter_status:
+  #   - text: "The status of your application ID {application_id} is: {status}"
+
+  utter_ask_survey:
+    - text: "Please enter your survey number."
+
+  utter_ask_subdivision:
+    - text: "Please enter your subdivision number."
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by NIC(National Informatic Center - besant nagar)."
+
+actions:
+  - action_check_status
+  - action_get_land_type
+  # - action_submit_application
+  # - action_show_summary
+  - action_get_districts
+  - action_get_taluks
+  - action_get_village
+  - action_get_survey
+  - action_get_subdivision
+  - action_show_summary      
+  - action_submit_application
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
